@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 80px;
+            
+            background: url(images/paopao.png)  no-repeat left top,url(images/paopao.png)  no-repeat right bottom;
+            /* 多背景的颜色写到下面，防止被叠加 */
+            background-color: blue;
+            transition: all 2s;
+        }
+        div:hover{
+            background-position: right bottom,top left;
+
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
