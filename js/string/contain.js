@@ -1,3 +1,5 @@
+
+
 // 判断字符串中是否包含某个字符串
 let str = 'pages/index/index'
 let ostr = '/pages/index/index'
