@@ -17,14 +17,33 @@
         .outer-box .topbox{
             height: 200px;
             border: 1px solid pink;
+
+            display: flex;
             /* box-sizing: border-box; */
+            padding: 20px;
+        }
+        .topbox .leftbox{
+            border: 1px solid blue;
+            flex: 2;
+            padding: 20px;
+        }
+        .topbox .rightbox{
+            border:1px solid green;
+            flex: 3;
+            padding: 20px;
+
         }
     </style>
 </head>
 <body>
     <div class="outer-box">
         <div class="topbox">
-
+            <!-- <div class="leftbox">
+                leftbox
+            </div> -->
+            <div class="rightbox">
+                rightbox
+            </div>
         </div>
     </div>
 </body>
