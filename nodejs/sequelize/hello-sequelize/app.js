@@ -55,14 +55,36 @@ var now = Date.now();
 //     console.log('created: ' + JSON.stringify(dog));
 // })();
 
-(async () => {
-    var pets = await Pet.findAll({
-        // where: {
-        //     name: 'Gaffey'
-        // }
-    });
-    console.log(`find ${pets.length} pets:`);
-    for (let p of pets) {
-        console.log(JSON.stringify(p));
+// (async () => {
+//     var pets = await Pet.findAll({
+//         // where: {
+//         //     name: 'Gaffey'
+//         // }
+//     });
+//     console.log(`find ${pets.length} pets:`);
+//     for (let p of pets) {
+//         console.log(JSON.stringify(p));
+//     }
+// })();
+
+// update
+(async ()=>{
+    var pList = await Pet.findAll({
+        where: {
+            id:'d-1561544138545'
+        }
+    })  
+    for (let index = 0; index < pList.length; index++) {
+        const element = pList[index];
+        element.gender = true
+        element.birth = '2019-06-18'
+        element.updatedAt = Date.now();
+        element.name = 'Odieupdate'
+        let np =  await element.save();
+        console.log(np)
     }
 })();
+// delete
+(async ()=>{
+    // var p = await Pet.findById
+})
