@@ -15,6 +15,12 @@
             "request": "launch",
             "name":"node-seq",
             "program": "${workspaceFolder}\\nodejs\\sequelize\\hello-sequelize\\app.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name":"node-1",
+            "program": "${workspaceFolder}\\js\\获取嵌套数据\\index.js"
         }
     ]
 }
