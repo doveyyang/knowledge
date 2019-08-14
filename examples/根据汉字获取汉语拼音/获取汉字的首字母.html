@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div></div>
+    <script src="./pinyinpack.js"></script>
+    <script>
+        window.onload = function(){
+            // debugger;            
+            let array = ['新疆','北京','上海'];
+            for (let index = 0; index < array.length; index++) {
+                const element = array[index];
+                console.log(pinyin.getFullChars(element));
+                console.log(pinyin.getCamelChars(element));
+                
+            }
+        }
+    </script>
+</body>
+</html>
