@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>学习使用LayUI</title>
+    <link rel="stylesheet" href="layui-v2.5.4/layui/css/layui.css">
+</head>
+<body>
+    <h2>LayUI</h2>
+    <script src="layui-v2.5.4/layui/layui.js"></script>
+    <!-- <script>
+            //一般直接写在一个js文件中
+            layui.use(['layer', 'form'], function(){
+              var layer = layui.layer
+              ,form = layui.form;
+              
+              layer.msg('Hello World');
+            });
+    </script>  -->
+    <script>
+        layui.use(['layer','form'],function(){
+            var layer = layui.layer,form  = layui.form;
+
+            layer.msg("Hello World");
+        });
+    </script>
+</body>
+</html>
